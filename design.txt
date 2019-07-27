@@ -1,0 +1,7 @@
+Colour Scheme:
+-Background: #FFFFFF
+-Background (feature): #E1E5F2
+-Containers: ##BFDBF7
+-Navbar (background): #022B3A to #30515D
+-Navbar (highlight): #1F7A8C
+-Navbar (active): #289eb6

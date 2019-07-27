@@ -1,0 +1,269 @@
+/*For resetting all CSS preset styles */
+html, body, div,
+ span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center, video,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, section{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+}
+
+/* Make the page scrollable */
+html {
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+body {
+	background-size: 100vw;
+  overflow: hidden;
+	font-family: "Incolsata", monospace;
+	color: black;
+  font-size: 1rem;
+}
+
+/* Monseratt from Google Fonts is used as the standard font for all used
+headers*/
+h1, h2, h3{
+  font-family: "Montserrat", sans-serif;
+  font-size: 2em;
+}
+
+/* Standard font colour is black, with each div having 1 em of padding at the
+bottom to ensure that spacing is consistent
+Text is alligned to the left by default */
+.content {
+  background-color: #ffffff;
+  width: 100vw;
+  margin: 0;
+  color: black;
+  text-align: center;
+  padding-bottom: 2em;
+}
+
+.content h2 {
+  text-align: center;
+  padding-top: 1em;
+  margin: 0;
+  font-size: 2em;
+}
+
+/* Headers are centered*/
+.content h1 {
+  padding: 1em;
+  text-align: center;
+}
+
+/* Suitable padding is placed around paragraphs*/
+.content p {
+  padding: 1em 10em 0 10em;
+}
+
+.sub-section {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sub-section p {
+  text-align: left;
+}
+
+.section-title {
+  display: inline-block;
+}
+
+.section-title:after {
+  content: ""; /* This is necessary for the pseudo element to work. */
+  display: block; /* This will put the pseudo element on its own line. */
+  margin: 0 auto; /* This will center the border. */
+  width: 70%; /* Change this to whatever width you want. */
+  padding-top: 20px; /* This creates some space between the element and the border. */
+  border-bottom: 3px solid black; /* This creates the border. Replace black with whatever color you want. */
+}
+
+#navbar {
+    z-index: 1;
+    background: radial-gradient(at bottom right, #022b3a, #30515d);
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+}
+
+/* Link elements are displayed to the left of the navbar
+Text is centrally alligned
+Link deocration is removed*/
+#navbar a {
+  transition-duration: 300ms;
+    float: left;
+    color: #ffffff;
+    text-align: center;
+    padding: 1em;
+    text-decoration: none;
+}
+
+/* The background of each link element gets lighter when hovered over*/
+#navbar a:hover {
+    background-color: #1f7a8c;
+}
+
+/* A container is set up for a series of flexboxes
+The container fills the entire width of the screen and only has bottom padding
+All items are centered*/
+.project-container {
+  width: 80vw;
+  padding: 0 0 1em 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Each flexbox fills 30% of the display width, and all content within them is
+centered
+The boxes are bordered and a small margin is applid to them*/
+.project {
+  display: flex;
+  flex-direction: row;
+  background: radial-gradient(at bottom right, #056284, #289eb6);
+  margin: 1em;
+  width: 70%;
+  text-decoration: none;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.project-content {
+  padding: 2rem;
+  flex-direction: column;
+  text-align: left;
+}
+
+.project-content h2 {
+  padding-top: 0;
+}
+
+.project-content p {
+  margin: 0;
+  padding: 0;
+}
+
+.project-image {
+  width: 30%;
+}
+
+.project-button {
+  position: relative;
+  transition-duration: 300ms;
+  width: 20%;
+  display: inline-block;
+  margin: 1rem 1rem 0 0;
+  padding: 0.5rem;
+  border: 2px solid white;
+  border-radius: 2px;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+}
+
+.project-button:hover{
+  border-color: black;
+  color: black;
+}
+
+.sub-title {
+  display: inline-block;
+  padding: 0 1rem 1rem 0;
+}
+
+.tag {
+  margin: 0.5rem;
+  padding: 1rem;
+  color: white;
+  background: radial-gradient(at 150% 120%, #022B3A, #289eb6);
+}
+
+.end {
+  height: 40vh;
+}
+
+.contact-button {
+  color: black;
+  border-color: black;
+}
+
+.contact-button:hover {
+  background-color: black;
+  color: white;
+}
+
+/* The background image is setand positioned as required
+The introduction section fills 90% of the display height */
+#intro {
+  background-color: #000000;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  height: 90vh;
+}
+
+/* The standard
+font size is increased for the page title */
+#intro h1 {
+  display: block;
+  color: white;
+  padding-bottom: 0;
+  margin: 0;
+  font-size: 5em;
+}
+
+#intro span {
+  color: #62d862;
+  animation: color-change 5s infinite;
+}
+
+#work-button {
+  margin: 2rem;
+  display: inline-block;
+  font-size: 2rem;
+  padding: 1rem;
+  text-decoration: none;
+  color: #62d862;
+  border: 3px solid #62d862;
+  animation: border-color-change 5s infinite;
+}
+
+#work-button span {
+  animation: color-change 5s infinite;
+}
+
+#work-arrow {
+  transition-duration: 300ms;
+  color: #62d862;
+  animation: color-change 5s infinite;
+}
+
+@keyframes color-change {
+    0% { color: #62d862; }
+    25% { color: #ff5148; }
+    50% { color: #61a8ff; }
+    75% { color: #ffb861; }
+}
+
+@keyframes border-color-change {
+  0% { border: 3px solid #62d862; }
+  25% { border: 3px solid #ff5148; }
+  50% { border: 3px solid #61a8ff; }
+  75% { border: 3px solid #ffb861; }
+}
