@@ -215,7 +215,7 @@ The introduction section fills 90% of the display height */
   background-size: cover;
   background-position: center;
   color: white;
-  height: 90vh;
+  height: 80vh;
 }
 
 /* The standard
@@ -266,4 +266,46 @@ font size is increased for the page title */
   25% { border: 3px solid #ff5148; }
   50% { border: 3px solid #61a8ff; }
   75% { border: 3px solid #ffb861; }
+}
+
+@media (max-width: 768px) {
+  i {
+    display: none;
+  }
+
+  #work-button {
+    display: none;
+  }
+
+  #about p{
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .tag {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 1023px) {
+  .sub-section {
+    width: 100vw;
+  }
+
+  .project-container {
+    width: 100vw;
+  }
+
+  .project {
+    width: 100vw;
+  }
+
+  #intro h1 {
+    font-size: 3rem;
+  }
+
+  #intro {
+    padding-bottom: 2rem;
+    height: auto;
+  }
 }
