@@ -39,6 +39,23 @@ h1, h2, h3{
   font-size: 2em;
 }
 
+.sub-section table {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50vw;
+  padding: 1rem;
+  border: 2px solid black;
+}
+
+.sub-section th {
+  font-weight: bold;
+  padding: 0 0 1rem 0;
+}
+
+.sub-section td {
+  padding-bottom: 1rem;
+}
+
 /* Standard font colour is black, with each div having 1 em of padding at the
 bottom to ensure that spacing is consistent
 Text is alligned to the left by default */
@@ -165,7 +182,6 @@ The boxes are bordered and a small margin is applid to them*/
 .project-button {
   position: relative;
   transition-duration: 300ms;
-  width: 20%;
   display: inline-block;
   margin: 1rem 1rem 0 0;
   padding: 0.5rem;
@@ -205,6 +221,10 @@ The boxes are bordered and a small margin is applid to them*/
 .contact-button:hover {
   background-color: black;
   color: white;
+}
+
+#nav-icon {
+  display: none;
 }
 
 /* The background image is setand positioned as required
@@ -268,25 +288,6 @@ font size is increased for the page title */
   75% { border: 3px solid #ffb861; }
 }
 
-@media (max-width: 768px) {
-  i {
-    display: none;
-  }
-
-  #work-button {
-    display: none;
-  }
-
-  #about p{
-    padding-left: 3rem;
-    padding-right: 3rem;
-  }
-
-  .tag {
-    font-size: 1rem;
-  }
-}
-
 @media (max-width: 1023px) {
   .sub-section {
     width: 100vw;
@@ -306,6 +307,57 @@ font size is increased for the page title */
 
   #intro {
     padding-bottom: 2rem;
+    height: auto;
+  }
+}
+
+@media (max-width: 780px) {
+
+  #work-button {
+    display: none;
+  }
+
+  #about p{
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .project-image {
+    display: none;
+  }
+
+  .tag {
+    font-size: 1rem;
+  }
+
+  .sub-section table {
+    width: 80vw;
+  }
+
+  #nav-icon {
+    display: inline-block;
+    color: white;
+    float: right;
+    cursor: pointer;
+    position: relative;
+    padding: 1rem;
+  }
+
+  #navbar {
+    font-size: 1.3rem;
+    height: 100vh;
+    padding: 1rem 0;
+    width: 300px;
+    position: fixed;
+    top: 0;
+    left: -100%;
+  }
+
+  #navbar a {
+    width: 100%;
+  }
+
+  .end {
     height: auto;
   }
 }
